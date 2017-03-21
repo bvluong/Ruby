@@ -32,8 +32,6 @@ class Game
     display
     move = @current_player.get_move
     @board.place_mark(move,@current_player.mark)
-    p @board.won_a_row(@current_player.mark)
-    p @board.won_a_column(@current_player.mark)
   end
 
   def display
